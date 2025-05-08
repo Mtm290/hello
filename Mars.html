@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/images/Zillow.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Zillow</title>
+  
+  
+ <h5 class="zillow">
+
+ <a  target="_blank" href="https://www.zillow.com/"><img src="/images/zillow (3).png" alt="">
+ </a> 
+ </h5>
+
+<script src="mtm.js">
+  
+
+</script>
+   
+  
+  <style>
+    .zillow{
+      display: flexbox;
+      justify-content: center;
+      bottom: 10px;
+      
+    }
+   
+    .logo{
+
+    width: 90px;
+    height:800;
+    display: flex;
+    justify-content: center;
+    color: blue;
+   cursor: pointer;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+   
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 40px;
+    }
+footer{
+  background-color: black;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  padding: 32px 34px ;
+
+}
+    .property-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+     
+    }
+
+    .property-card img:hover {
+      transform: scale(1.1);
+     
+    }
+
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: ease-in-out 0.2s;
+    }
+
+    .property-details {
+      padding: 15px;
+    }
+    .icons{
+      display: flex;
+      color: none;
+      
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .fa-linkedin:hover{
+      color: rgb(34, 34, 130);
+      cursor: pointer;
+    }
+    .icons i{
+      font-size: 30px;
+      color: none;
+      
+      background-color: none;
+    }
+    .fa-twitter:hover{
+      color: rgb(12, 127, 235);
+      cursor: pointer;
+    }
+    
+    
+    
+
+    .property-details h3 {
+      margin: 0;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .address {
+      font-size: 16px;
+      color: #555;
+      margin: 8px 0;
+    }
+
+    .specs {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .fa-facebook:hover{
+      color: blue;
+      cursor: pointer;
+    }
+    .app-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.store-badge {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.store-badge:hover {
+  transform: scale(1.05);
+}
+
+    .fa-youtube:hover{
+      color: red;
+      cursor: pointer;
+    }
+    .fa-pinterest:hover{
+      color: orange;
+      cursor: pointer;
+    }
+    .fa-instagram:hover{
+      color:pink;
+      cursor: pointer;
+    }
+    .text:hover{
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .specs span {
+      margin-right: 10px;
+    }
+    .size{
+      font-size: 12px;
+    }
+    .grid{
+      display: flex;
+      justify-content:baseline;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 17px;
+     
+    
+    }
+    h6{
+      font-size: 43px;
+      text-align: center;
+      color: blue;
+      font-weight: bold;
+      font-family: sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    a{
+      text-decoration: none;
+      color: none;
+    }
+    button{
+      padding: 12px 21px;
+      color: rgb(237, 237, 244);
+      background-color: rgb(0, 0, 0);
+      font-size: 21px;
+      font-weight: bold;
+      border-radius: 21px;
+      border: none;
+      cursor: pointer;
+      
+
+      
+    }
+    button:hover{
+      background: linear-gradient(90deg, red,blue);
+      transform: translateY(-0.3px);
+    }
+    
+    
+  </style>
+</head>
+
+<body>
+  
+  
+  <br><b><br><br><br>
+
+<div class="property-grid">
+  <!-- Property 1 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="House">
+    <div class="property-details">
+      <div class="price">$450,000</div>
+      <div class="address">123 Palm Street, Los Angeles, CA</div>
+      <div class="specs">
+        <span>3 Beds</span>
+        <span>2 Baths</span>
+        <span>1,800 sqft</span>
+       <a target="_blank" href="https://www.zillow.com/homedetails/5019-Donna-Ave-Tarzana-CA-91356/19946932_zpid/"> <button>Shop Now</button>
+       </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 2 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$320,000</div>
+      <div class="address">789 Oak Avenue, Dallas, TX</div>
+      <div class="specs">
+        <span>2 Beds</span>
+        <span>2 Baths</span>
+        <span>1,200 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 3 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="House">
+    <div class="property-details">
+      <div class="price">$980,000</div>
+      <div class="address">456 Ocean Drive, Miami, FL</div>
+      <div class="specs">
+        <span>4 Beds</span>
+        <span>3 Baths</span>
+        <span>3,200 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 4 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" alt="House">
+    <div class="property-details">
+      <div class="price">$600,000</div>
+      <div class="address">88 Mountain View, Denver, CO</div>
+      <div class="specs">
+        <span>3 Beds</span>
+        <span>2 Baths</span>
+        <span>2,100 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 5 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$750,000</div>
+      <div class="address">55 Maple Street, Seattle, WA</div>
+      <div class="specs">
+        <span>4 Beds</span>
+        <span>3 Baths</span>
+        <span>2,500 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 6 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="House">
+    <div class="property-details">
+      <div class="price">$520,000</div>
+      <div class="address">12 Lakeview Road, Chicago, IL</div>
+      <div class="specs">
+        <span>3 Beds</span>
+        <span>2 Baths</span>
+        <span>1,950 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 7 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3" alt="House">
+    <div class="property-details">
+      <div class="price">$600,433</div>
+      <div class="address">Los Alamos in USA </div>
+      <div class="specs">
+        <span>4 Beds</span>
+        <span>3 Baths</span>
+        <span>3,500 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 8 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$875,000</div>
+      <div class="address">3412 Sunset Lane, Austin, TX</div>
+      <div class="specs">
+        <span>4 Beds</span>
+        <span>3 Baths</span>
+        <span>3,100 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 9 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227" alt="House">
+    <div class="property-details">
+      <div class="price">$540,000</div>
+      <div class="address">99 Pine Tree Ave, Orlando, FL</div>
+      <div class="specs">
+        <span>3 Beds</span>
+        <span>2 Baths</span>
+        <span>2,200 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Property 10 -->
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$1,250,000</div>
+      <div class="address">77 Bay Area Blvd, San Francisco, CA</div>
+      <div class="specs">
+        <span>5 Beds</span>
+        <span>4 Baths</span>
+        <span>4,500 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1591474200742-8e512e6f98f8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$1,250,000</div>
+      <div class="address">77 Bay Area Blvd, San Francisco, CA</div>
+      <div class="specs">
+        <span>5 Beds</span>
+        <span>4 Baths</span>
+        <span>4,500 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="property-card">
+    <img src="https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$1,250,000</div>
+      <div class="address">77 Bay Area Blvd, San Francisco, CA</div>
+      <div class="specs">
+        <span>5 Beds</span>
+        <span>4 Baths</span>
+        <span>4,500 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="property-card">
+  
+  
+    <img src="https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House">
+    <div class="property-details">
+      <div class="price">$1,250,000</div>
+      <div class="address">77 Bay Area Blvd, San Francisco, CA</div>
+      <div class="specs">
+        <span>5 Beds</span>
+        <span>4 Baths</span>
+        <span>4,500 sqft</span>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="property-card">
+    <img src="/images/pexels-pixabay-259588.jpg" alt="">
+    <div class="property-details">
+      <div class="price"> $5,450,000</div>
+        <div class="address"> 12345 San Francisco, CA</div>
+          <div class="specs">
+            <span>7 Beds</span>
+            <span>3 Baths</span>
+            <span>3,500 sqrt</span>
+            <button>Shop Now </button>
+          </div>
+        
+     
+    </div>
+  </div>
+  <div class="property-card">
+<img src="https://wallpapercave.com/uwp/uwp4672085.jpeg" alt="">
+<div class="property-details">
+  <div class="price">$1,250,000</div> 
+  <div class="address"> 12345 San Francisco, CA</div>
+  <div class="specs"></div>
+  <div class="specs">
+    <span>5 Beds</span>
+    <span>4 Baths</span>
+    <span>4,500 sqft</span>
+    <button>Shop Now</button>
+   
+
+
+</div>
+
+  </div>
+</div>
+
+<div class="property-card">
+  <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  <div class="property-details">
+    <div class="price">$1,250,000</div> 
+    <div class="address"> 12345 San Francisco, CA</div>
+    <div class="specs"></div>
+    <div class="specs">
+      <span>5 Beds</span>
+      <span>4 Baths</span>
+      <span>4,500 sqft</span>
+      <button>Shop Now</button>
+     
+  
+  
+  </div>
+  
+    </div>
+  </div>
+
+
+  <div class="property-card">
+    <img src="https://images.pexels.com/photos/277667/pexels-photo-277667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="House">
+    <div class="property-details">
+      <div class="price">$450,000</div>
+      <div class="address">123 Palm Street, Los Angeles, CA</div>
+      <div class="specs">
+        <span>3 Beds</span>
+        <span>2 Baths</span>
+        <span>1,800 sqft</span>
+       <a target="_blank" href="https://www.zillow.com/homedetails/5019-Donna-Ave-Tarzana-CA-91356/19946932_zpid/"> <button>Shop Now</button>
+       </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br><br>
+<footer>
+
+  <div class="grid">
+    <p class="text">
+      About
+    </p>
+    <p class="text">
+      Zestimates
+    </p>
+    <p class="text">
+      Careers
+    </p>
+    <p class="text">
+      
+    </p>
+    <p class="text">
+      Careers-U.S. Privacy Notice 
+    </p>
+    <p class="text">
+      Careers-Mexico Privacy Notice
+    </p>
+    <p class="text">
+    Help
+    </p>
+    <p class="text">
+  Advertise
+    </p>
+     <p class="text">
+  Fair Housing Guide 
+    </p>
+     <p class="text">
+  
+      Advocacy
+    </p>
+ <p class="text">
+  Terms of use
+    </p>
+
+     <p class="text">
+  Privacy Notice 
+    </p>
+     <p class="text">
+  Cookie Preference
+    </p>
+     <p class="text">
+  Learn
+    </p>
+     <p class="text">
+  AI 
+    </p>
+     <p class="text">
+  Mobile Apps
+    </p>
+
+  </div>
+
+        
+
+<br>
+  <div class="icons">
+
+    
+   <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
+   </a>
+    <i class="fa-brands fa-twitter"></i>
+    <a href="http://www.instagra.com/" target="_blank" rel="noopener noreferrer"> <i  class="fa-brands fa-instagram"></i>
+    </a>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-pinterest"></i>
+    </div><br><br><br>
+
+    <div class="app-buttons">
+      <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="store-badge">
+      </a>
+      <a href="https://apps.apple.com/app/idyourappid" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge">
+      </a>
+    </div>
+    
+
+    &copy; 
+    <span class="size">
+      2025 Zillow, Inc. All rights reserved.
+    </span>
+</footer>
+</body>
+</html>
